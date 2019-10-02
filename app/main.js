@@ -361,6 +361,7 @@ function startMicrobreak () {
       microbreakWinLocal.webContents.send('progress', startTime,
         breakDuration, strictMode, postponable, postponableDurationPercent)
       microbreakWinLocal.setAlwaysOnTop(true)
+      microbreakWinLocal.setVisibleOnAllWorkspaces(true, { visibleOnFullScreen: true })
     })
     microbreakWinLocal.loadURL(modalPath)
     microbreakWins.push(microbreakWinLocal)
@@ -450,6 +451,7 @@ function startBreak () {
       breakWinLocal.webContents.send('progress', startTime,
         breakDuration, strictMode, postponable, postponableDurationPercent)
       breakWinLocal.setAlwaysOnTop(true)
+      breakWinLocal.setVisibleOnAllWorkspaces(true, { visibleOnFullScreen: true })
     })
     breakWinLocal.loadURL(modalPath)
     breakWins.push(breakWinLocal)

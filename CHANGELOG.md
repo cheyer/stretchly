@@ -19,6 +19,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - new break ideas
 - pause breaks when screen is locked (Windows, macOS)
+- break window should be visible above fullscreen windows (macOS)
+- break window should be visible on all workspaces (Linux, macOS)
 
 ## [0.20.1] - 2019-07-14
 ### Added
